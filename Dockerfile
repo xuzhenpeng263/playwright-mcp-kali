@@ -18,7 +18,7 @@ RUN --mount=type=cache,target=/root/.npm,sharing=locked,id=npm-cache \
     --mount=type=bind,source=package-lock.json,target=package-lock.json \
   npm ci --omit=dev && \
   # Install system dependencies for playwright
-  npx -y playwright-core install-deps chromium
+  npx -y playwright-kali-core install-deps chromium
 
 # ------------------------------
 # Builder
@@ -41,7 +41,7 @@ COPY *.json *.js *.ts .
 # - Cache is reused when only source code changes
 FROM base AS browser
 
-RUN npx -y playwright-core install --no-shell chromium
+RUN npx -y playwright-kali-core install --no-shell chromium
 
 # ------------------------------
 # Runtime

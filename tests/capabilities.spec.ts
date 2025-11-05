@@ -38,7 +38,6 @@ test('test snapshot tool list', async ({ client }) => {
     'browser_resize',
     'browser_snapshot',
     'browser_tabs',
-    'browser_take_screenshot',
     'browser_wait_for',
   ]));
 });
@@ -69,7 +68,6 @@ test('test tool list proxy mode', async ({ startClient }) => {
     'browser_resize',
     'browser_snapshot',
     'browser_tabs',
-    'browser_take_screenshot',
     'browser_wait_for',
   ]));
 });

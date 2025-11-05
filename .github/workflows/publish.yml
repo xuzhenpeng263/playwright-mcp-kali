@@ -40,7 +40,7 @@ jobs:
           npm version ${{ steps.canary-version.outputs.version }} --no-git-tag-version
 
       - run: npm ci
-      - run: npx playwright install --with-deps
+      - run: npx playwright-kali install --with-deps
       - run: npm run lint
       - run: npm run ctest
 
@@ -63,7 +63,7 @@ jobs:
       - name: Update npm
         run: npm install -g npm@latest
       - run: npm ci
-      - run: npx playwright install --with-deps
+      - run: npx playwright-kali install --with-deps
       - run: npm run lint
       - run: npm run ctest
       - run: npm publish

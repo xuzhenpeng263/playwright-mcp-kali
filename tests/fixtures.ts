@@ -16,16 +16,16 @@
 
 import fs from 'fs';
 import path from 'path';
-import { chromium } from 'playwright';
+import { chromium } from 'playwright-kali';
 
-import { test as baseTest, expect as baseExpect } from '@playwright/test';
+import { test as baseTest, expect as baseExpect } from '@playwright-kali/test';
 import { StdioClientTransport } from '@modelcontextprotocol/sdk/client/stdio.js';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { ListRootsRequestSchema } from '@modelcontextprotocol/sdk/types.js';
 import { TestServer } from './testserver/index';
 
 import type { Config } from '../config';
-import type { BrowserContext } from 'playwright';
+import type { BrowserContext } from 'playwright-kali';
 import type { Transport } from '@modelcontextprotocol/sdk/shared/transport.js';
 import type { Stream } from 'stream';
 

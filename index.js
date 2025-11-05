@@ -15,5 +15,5 @@
  * limitations under the License.
  */
 
-const { createConnection } = require('playwright/lib/mcp/index');
+const { createConnection } = require('playwright-kali/lib/mcp/index');
 module.exports = { createConnection };

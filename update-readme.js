@@ -21,7 +21,7 @@ const path = require('path')
 const { zodToJsonSchema } = require('zod-to-json-schema')
 const { execSync } = require('child_process');
 
-const { browserTools } = require('playwright/lib/mcp/browser/tools');
+const { browserTools } = require('playwright-kali/lib/mcp/browser/tools');
 
 const capabilities = {
   'core': 'Core automation',

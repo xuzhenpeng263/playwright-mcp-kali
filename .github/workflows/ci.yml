@@ -39,7 +39,7 @@ jobs:
     - name: Install dependencies
       run: npm ci
     - name: Playwright install
-      run: npx playwright install --with-deps
+      run: npx playwright-kali install --with-deps
     - name: Run tests
       run: npm run test
 
@@ -55,7 +55,7 @@ jobs:
     - name: Install dependencies
       run: npm ci
     - name: Playwright install
-      run: npx playwright install --with-deps chromium
+      run: npx playwright-kali install --with-deps chromium
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
     - name: Build and push
@@ -100,7 +100,7 @@ jobs:
       run: |
         cd ..
         npm ci
-        npx playwright install chromium
+        npx playwright-kali install chromium
     - name: Run tests
       run: |
         if [[ "$(uname)" == "Linux" ]]; then

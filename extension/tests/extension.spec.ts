@@ -16,11 +16,11 @@
 
 import fs from 'fs';
 import path from 'path';
-import { chromium } from 'playwright';
+import { chromium } from 'playwright-kali';
 import { test as base, expect } from '../../tests/fixtures';
 
 import type { Client } from '@modelcontextprotocol/sdk/client/index.js';
-import type { BrowserContext } from 'playwright';
+import type { BrowserContext } from 'playwright-kali';
 import type { StartClient } from '../../tests/fixtures';
 
 type BrowserWithExtension = {
