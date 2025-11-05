@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(nul)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(find:*)",
+      "Bash(npm install)",
+      "Bash(npm run build)",
+      "Bash(npm install:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
