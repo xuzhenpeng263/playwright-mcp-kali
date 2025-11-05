@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-const { program } = require('playwright-kali-core/lib/utilsBundle');
+const { program } = require('playwright-core-kali/lib/utilsBundle');
 const { decorateCommand } = require('playwright-kali/lib/mcp/program');
 
 const packageJSON = require('./package.json');
